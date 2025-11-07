@@ -26,11 +26,11 @@ dnf5 install -y polkit-kde
 dnf5 -y copr enable blakegardner/xremap
 dnf5 install -y xremap-niri
 
-mkdir -p ~/.config/xremap
-cp ./xremap ~/.config/xremap/
+# mkdir -p /home/jhgalino/.config/xremap
+# cp ./xremap /home/jhgalino/.config/xremap/
 
-mkdir -p ~/.config/niri
-cp ./niri ~/.config/niri
+# mkdir -p ~/.config/niri
+# cp ./niri ~/.config/niri
 
 #### Example for enabling a System Unit File
 
