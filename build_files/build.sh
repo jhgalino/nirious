@@ -14,6 +14,8 @@ set -ouex pipefail
 dnf5 install -y gdm
 dnf5 install -y podman distrobox
 dnf5 install -y niri xwayland-satellite
+dnf5 install -y helix
+dnf5 install -y polkit-kde
 
 # Use a COPR Example:
 #
@@ -21,6 +23,14 @@ dnf5 install -y niri xwayland-satellite
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr enable blakegardner/xremap
+dnf5 install -y xremap-niri
+
+mkdir -p ~/.config/xremap
+cp ./xremap ~/.config/xremap/
+
+mkdir -p ~/.config/niri
+cp ./niri ~/.config/niri
 
 #### Example for enabling a System Unit File
 

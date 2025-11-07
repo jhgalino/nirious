@@ -1,0 +1,10 @@
+modmap:
+  - name: Caps Lock as Control
+    remap:
+      CapsLock:
+        held: LeftCtrl
+        alone: Esc
+        free_hold: true
+  - name: Left Alt as Meta
+    remap:
+      LeftAlt: LeftMeta
