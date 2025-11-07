@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 # dnf5 install -y tmux 
-# dnf5 install -y lightdm
+dnf5 install -y lightdm lightdm-gtk-greeter
 dnf5 install -y podman distrobox
 dnf5 install -y niri xwayland-satellite
 
@@ -25,4 +25,4 @@ dnf5 install -y niri xwayland-satellite
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
-# systemctl enable lightdm
+systemctl enable lightdm.service
