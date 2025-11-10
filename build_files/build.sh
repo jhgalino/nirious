@@ -16,6 +16,7 @@ dnf5 install -y podman distrobox
 dnf5 install -y niri xwayland-satellite
 dnf5 install -y helix
 dnf5 install -y polkit-kde
+dnf5 install -y network-manager-applet blueman
 
 # Use a COPR Example:
 #
@@ -36,3 +37,4 @@ dnf5 install -y xremap-niri
 
 # systemctl enable podman.socket
 systemctl enable gdm
+systemctl enable bluetooth
