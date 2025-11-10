@@ -275,7 +275,7 @@ clipboard {
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
-spawn-at-startup "xremap" "~/.config/xremap/config.yml"
+spawn-at-startup "xremap" "/home/jhgalino/.config/xremap/config.yml"
 spawn-at-startup "/usr/libexec/kf6/polkit-kde-authentication-agent-1"
 
 
