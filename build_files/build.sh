@@ -28,10 +28,9 @@ dnf5 -y copr enable blakegardner/xremap
 dnf5 install -y xremap-niri
 
 # mkdir -p /home/jhgalino/.config/xremap
-# cp ./xremap /home/jhgalino/.config/xremap/
-
+cp ./xremap /home/xremap
 # mkdir -p ~/.config/niri
-# cp ./niri ~/.config/niri
+cp ./niri /home/niri
 
 #### Example for enabling a System Unit File
 
