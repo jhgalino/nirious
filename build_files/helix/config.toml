@@ -1,0 +1,7 @@
+theme = "dracula"
+
+[editor]
+rulers = [80, 100]
+
+[editor.cursor-shape]
+insert = "bar"
