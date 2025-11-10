@@ -29,6 +29,10 @@ FROM ghcr.io/ublue-os/base-main:latest
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
+COPY ./build_files/niri /etc/skel/.config/niri
+COPY ./build_files/xremap /etc/skel/.config/xremap
+RUN chmod -R 755 /etc/skel/.config
+
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
