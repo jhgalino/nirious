@@ -31,6 +31,7 @@ FROM ghcr.io/ublue-os/base-main:latest
 
 COPY ./build_files/niri /etc/skel/.config/niri
 COPY ./build_files/xremap /etc/skel/.config/xremap
+COPY ./build_files/helix /etc/skel/.config/helix
 RUN chmod -R 755 /etc/skel/.config
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
