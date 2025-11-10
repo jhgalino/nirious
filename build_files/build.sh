@@ -27,11 +27,6 @@ dnf5 install -y network-manager-applet blueman
 dnf5 -y copr enable blakegardner/xremap
 dnf5 install -y xremap-niri
 
-# mkdir -p /home/jhgalino/.config/xremap
-cp ./xremap /home/xremap
-# mkdir -p ~/.config/niri
-cp ./niri /home/niri
-
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
