@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 # dnf5 install -y tmux 
-dnf5 install -y gdm
+dnf5 install -y gdm nautilus
 dnf5 install -y podman distrobox
 dnf5 install -y niri xwayland-satellite
 dnf5 install -y helix
