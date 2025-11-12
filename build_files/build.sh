@@ -13,7 +13,7 @@ set -ouex pipefail
 # dnf5 install -y tmux 
 dnf5 install -y gdm nautilus
 dnf5 install -y podman distrobox
-dnf5 install -y niri xwayland-satellite mako
+dnf5 install -y niri xwayland-satellite mako swayidle
 dnf5 install -y helix
 dnf5 install -y polkit-kde
 dnf5 install -y network-manager-applet blueman
